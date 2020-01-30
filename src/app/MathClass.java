@@ -17,9 +17,9 @@ class MathClass {
         double lineLenghtAB = countLineLenght(new Line(pointA, pointB));
         double lineLenghtBC = countLineLenght(new Line(pointB, pointC));
         double lineLenghtCA = countLineLenght(new Line(pointC, pointA));
-        if(lineLenghtAB > lineLenghtBC && lineLenghtAB > lineLenghtCA) return lineLenghtBC + lineLenghtAB > lineLenghtAB;
+        if(lineLenghtAB > lineLenghtBC && lineLenghtAB > lineLenghtCA) return lineLenghtBC + lineLenghtCA > lineLenghtAB;
         else if(lineLenghtBC > lineLenghtAB &&  lineLenghtBC > lineLenghtCA) return lineLenghtAB + lineLenghtCA > lineLenghtBC;
-        else return lineLenghtBC + lineLenghtCA > lineLenghtAB;
+        else return lineLenghtBC + lineLenghtAB > lineLenghtCA;
 
    }
 }
