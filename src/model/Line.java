@@ -14,7 +14,7 @@ public class Line {
         this.pointB = pointB;
     }
 
-    public double getLineLenght(){
+    public double countLineLenght(){
         return Math.sqrt(Math.pow(pointB.getX() - pointA.getX(), 2) + Math.pow(pointB.getY() - pointA.getY(), 2));
     }
 

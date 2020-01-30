@@ -13,19 +13,19 @@ public class Point {
         this.y = y;
     }
 
-    public boolean isFirstQuarter(){
+    public boolean isOnFirstQuarter(){
         return x>0 && y>0;
     }
 
-    public boolean isSecondQuarter(){
+    public boolean isOnSecondQuarter(){
         return x<0 && y>0;
     }
 
-    public boolean isThirdQuarter(){
+    public boolean isOnThirdQuarter(){
         return x<0 && y<0;
     }
 
-    public boolean isFourthQuarter(){
+    public boolean isOnFourthQuarter(){
         return x>0 && y<0;
     }
 
@@ -38,7 +38,7 @@ public class Point {
         return y==0;
     }
 
-    public boolean isCenter(){
+    public boolean isOnCenter(){
         return isOnAxisX() && isOnAxisY();
     }
 
